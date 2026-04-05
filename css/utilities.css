@@ -19,3 +19,6 @@
 .card-custom h5 {
     color: #e0e7ff; /* soft bluish white */
 }
+section {
+    scroll-margin-top: 80px;
+}
