@@ -167,8 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!chatStarted) {
 
-                addMessage("Hi 👋 I'm Rutuja , Sagar's AI Assistant.", "bot", true);
-                addMessage("Ask me anything about his projects, skills, or experience.", "bot", false);
+                addMessage("Hi 👋 I'm Sara , Rutuja's AI Assistant.", "bot", true);
+                addMessage("Ask me anything about her projects, skills, or experience.", "bot", false);
 
                 chatStarted = true;
             }
