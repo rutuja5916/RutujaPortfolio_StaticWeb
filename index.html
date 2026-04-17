@@ -470,7 +470,7 @@
                     </p>
 
                     <div class="tech-stack">
-                        <span>ASP.NET Core</span>
+                        <span>ASP.NET MVC</span>
                         <span>Azure AI</span>
                         <span>Cybersource</span>
                         <span>SQL Server</span>
@@ -483,6 +483,12 @@
                            data-bs-target="#caseStudyCayman">
                             Case Study
                         </a>
+
+                        <a href="https://www.cayman-jobs.ky/"
+                           target="_blank"
+                           class="btn btn-outline-light btn-md">
+                            Live Demo
+                        </a>
                     </div>
                 </div>
             </div>
@@ -490,28 +496,34 @@
             <!-- PROJECT 3 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card-custom project-card">
-                    <img src="/images/projects/mednest.png" class="img-fluid project-img" />
 
-                    <h5 class="mt-3">MedNest Appointment System</h5>
+                    <img src="/images/projects/cayman-jobs.png" class="img-fluid project-img" />
+
+                    <h5 class="mt-3">Island Charter Booking System</h5>
 
                     <p class="text-muted-custom">
-                        Online appointment booking platform for spa and salon services with
-                        multi-role access and secure payment integration.
+                        Booking platform for island and yacht charters with real-time availability,
+                        role-based access, and secure transaction handling to prevent double bookings.
                     </p>
 
-                    <div class="tech-stack">
+                    <div class="tech-stack mt-3">
                         <span>ASP.NET Core</span>
                         <span>SQL Server</span>
-                        <span>PlugNPay</span>
-                        <span>Bootstrap</span>
+                        <span>AJAX</span>
+                        <span>Transactions</span>
                     </div>
 
                     <div class="mt-3">
                         <a href="#"
                            class="btn btn-gradient btn-sm"
                            data-bs-toggle="modal"
-                           data-bs-target="#caseStudyMednest">
+                           data-bs-target="#caseStudyIsland">
                             Case Study
+                        </a>
+                        <a href="https://islandcharter.ky/"
+                           target="_blank"
+                           class="btn btn-outline-light btn-md">
+                            Live Demo
                         </a>
                     </div>
                 </div>
@@ -750,8 +762,8 @@
 
     </div>
 
-    <!-- Case Study Mednest -->
-    <div class="modal fade" id="caseStudyMednest">
+    <!-- Case Study Island Charter -->
+    <div class="modal fade" id="caseStudyIsland">
 
         <div class="modal-dialog modal-lg">
 
@@ -759,7 +771,7 @@
 
                 <div class="modal-header">
                     <h5 class="section-title">
-                        MedNest Appointment System – <span>Case Study</span>
+                        Island Charter Booking System – <span>Case Study</span>
                     </h5>
                     <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
@@ -769,9 +781,9 @@
                     <h6 class="gradient-text">Problem</h6>
 
                     <p>
-                        Managing appointments for spa and salon services manually leads to
-                        scheduling conflicts, inefficient booking processes, and lack of
-                        centralized management for service providers.
+                        Booking systems for charters require accurate availability tracking
+                        to avoid double bookings. Managing multiple users, time slots,
+                        and real-time updates can be complex.
                     </p>
 
 
@@ -779,32 +791,32 @@
 
                     <div class="architecture-diagram">
 
-                        <div class="arch-node" data-info="Users access system as Admin, Customer, or Vendor/Practitioner">
-                            Multi-Role System
+                        <div class="arch-node" data-info="Users (Admin, Vendor, Customer) access the system based on roles">
+                            Role-Based Access
                         </div>
 
                         <div class="arch-arrow">↓</div>
 
-                        <div class="arch-node" data-info="ASP.NET Core backend handles booking logic and APIs">
-                            Backend System
+                        <div class="arch-node" data-info="Users search and check availability for specific time slots">
+                            Availability Check
                         </div>
 
                         <div class="arch-arrow">↓</div>
 
-                        <div class="arch-node" data-info="Users book appointments based on available services and time slots">
-                            Appointment Booking
+                        <div class="arch-node" data-info="Booking process handled through ASP.NET Core backend">
+                            Booking System
                         </div>
 
                         <div class="arch-arrow">↓</div>
 
-                        <div class="arch-node" data-info="PlugNPay processes secure online payments">
-                            Payment Gateway
+                        <div class="arch-node" data-info="Database transactions ensure no duplicate bookings occur">
+                            Transaction Control
                         </div>
 
                         <div class="arch-arrow">↓</div>
 
-                        <div class="arch-node" data-info="Data stored and managed in SQL Server">
-                            Database
+                        <div class="arch-node" data-info="AJAX provides real-time updates without page reload">
+                            Real-Time Updates
                         </div>
 
                     </div>
@@ -815,37 +827,35 @@
                     <h6 class="gradient-text mt-4">Approach</h6>
 
                     <p>
-                        Designed a multi-role system with separate modules for Admin,
-                        Customers, and Vendors. Implemented appointment scheduling,
-                        service management, and payment integration.
+                        Designed a booking workflow with strict validation and transaction-based
+                        database operations to prevent conflicts. Implemented real-time updates
+                        for better user experience.
                     </p>
 
 
                     <h6 class="gradient-text mt-3">Solution</h6>
 
                     <ul>
-                        <li>Built appointment booking system with real-time slot selection</li>
-                        <li>Implemented multi-role access (Admin, Customer, Vendor)</li>
-                        <li>Integrated PlugNPay for secure payment processing</li>
-                        <li>Developed backend APIs and database for managing bookings and services</li>
+                        <li>Implemented booking and availability checking modules</li>
+                        <li>Used database transactions to prevent double booking issues</li>
+                        <li>Built role-based access for Admin, Vendor, and Customer</li>
+                        <li>Integrated AJAX for real-time updates without page reload</li>
                     </ul>
 
 
                     <h6 class="gradient-text mt-3">Result</h6>
 
                     <p>
-                        Delivered a streamlined booking platform that simplifies appointment
-                        scheduling and payment processing, improving user experience and
-                        operational efficiency for service providers.
+                        Delivered a reliable booking system with accurate availability tracking,
+                        improved user experience, and secure transaction handling.
                     </p>
 
 
                     <h6 class="gradient-text mt-3">Technical Challenge</h6>
 
                     <p>
-                        Managing real-time appointment availability and ensuring secure payment
-                        processing was challenging. Implemented efficient scheduling logic and
-                        reliable transaction handling.
+                        Preventing double bookings in concurrent scenarios was challenging.
+                        Solved using transaction management and proper validation logic.
                     </p>
 
                 </div>
