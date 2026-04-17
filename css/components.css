@@ -502,5 +502,26 @@
     }
 }
 
+.ai-label {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    /* Cartoon text */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    /* Shape */
+    padding: 6px 10px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
 
+
+/* Mobile view (<=768px) */
+@media (max-width: 768px) {
+    .ai-label {
+        display: none;
+    }
+}
 
